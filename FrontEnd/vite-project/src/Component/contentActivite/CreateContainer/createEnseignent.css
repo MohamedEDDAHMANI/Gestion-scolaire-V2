@@ -1,0 +1,185 @@
+.fillEnseignantContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+
+}
+.EnseignantForm{
+    width: 50%;
+    height: 100%;
+    animation: EnseignantForm .3s ease-in-out;
+}
+@keyframes EnseignantForm{
+    from {
+        transform: translateX(-100%);
+    } 
+    to {
+        transform: translate(0);
+    }
+}
+.EnseignantFormDiv{
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px;
+}
+.ensDesignationLabel{
+    margin: 0 0 10px 30px;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ensDesignationLabel::before {
+    width: 18px;
+    height: 18px;
+}
+  
+.ensDesignationLabel::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+  
+.ensDesignationLabel::before,
+.ensDesignationLabel::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: -30px;
+    top: 10px;
+    background-color: #dce2e4;
+}
+
+.P{
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+    color: whitesmoke;
+}
+#inputs{
+    width: 250px;
+    height: 25px;
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: solid 1.5px rgb(1, 21, 41);
+    background-color:rgb(1, 21, 41);
+    box-shadow: 0px 0px 2px .5px  rgba(255, 255, 255, 0.564);
+    border-radius: 2px;
+}
+#inputs::placeholder{
+    font-size: 15px;
+    color: rgb(246, 241, 241);
+
+}
+.ValueOfInputens{
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+    color: whitesmoke;
+}
+.selectform{
+    width: 265px;
+    height: 25px;
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: solid 1.5px rgb(1, 21, 41);
+    background-color:rgb(1, 21, 41);
+    box-shadow: 0px 0px 2px .5px  rgba(255, 255, 255, 0.564);
+    border-radius: 2px;
+}
+
+.placeholderText{
+    margin-top: 7px;
+    position: absolute;
+    left: 10px;
+}
+.EnseignantData{
+    background: linear-gradient( to right ,  rgba(17, 27, 36, 0.676)2%,rgb(0, 0, 0) );
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 92%;
+    width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    transition: .3s ease;
+    animation: EnseignantData .3s ease-in-out;
+}
+@keyframes EnseignantData{
+    from {
+        transform: translateX(100%);
+    } 
+    to {
+        transform: translate(0);
+    }
+}
+.EnseignantData h3{
+    color: aqua;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.EnseignantData table{
+    width: 100%;
+}
+.EnseignantData table th{
+    padding-left: 3px;
+    margin: 3px 0px;
+    font-size: 17px;
+    color: azure;
+}
+.EnseignantData table  td{
+    padding: 0 5px;
+}
+.submitE {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 260px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+}
+.submitE:hover {
+    background-color: #00bfff96;
+}
+.fileContainerE {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 210px;
+    bottom: 90px;
+    width: 50px;
+    height: 20px;
+    border: solid 1.5px rgb(1, 21, 41);
+    background-color: rgb(1, 21, 41);
+    box-shadow: 0px 0px 2px .5px rgba(255, 255, 255, 0.564);
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.file-input {
+    opacity: 1;
+    background-color: #00bfff;
+    width: fit-content;
+    cursor: pointer;
+    background-color: #00bfff;
+    /* z-index: 3; */
+    cursor: pointer;
+}
+

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homeBigContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.253)5%, rgba(0, 76, 240, 0.413));
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows:  repeat(7, 1fr);
+    overflow: hidden;
+}
+
+/* 13% 1fr */

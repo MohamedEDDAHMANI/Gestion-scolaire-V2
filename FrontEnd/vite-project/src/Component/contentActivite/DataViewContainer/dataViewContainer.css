@@ -1,0 +1,93 @@
+.ShowDataViewContainer{
+    grid-column: 1/61;
+    grid-row: 20/31;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    animation: DataAnimationRevers 0.3s ease-in-out forwards;
+}
+@keyframes DataAnimationRevers {
+    0% {
+        grid-column: 1/61; 
+        grid-row: 2/31; 
+    }
+    25% {
+        grid-column: 1/61; 
+        grid-row: 6/31; 
+    }
+    50% {
+        grid-column: 1/61; 
+        grid-row: 10/31; 
+    }
+    75% {
+        grid-column: 1/61; 
+        grid-row: 16/31; 
+    }
+    100% {
+        grid-column: 1/61;
+        grid-row: 20/31;
+    }
+}
+.selectedDataView{
+    border-radius: 25px;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgba(7, 2, 101, 0.53);
+    animation: DataViewAnime 0.2s ease-in-out forwards;
+}
+@keyframes DataViewAnime {
+    0% {
+        grid-column: 1/61;
+        grid-row: 20/31;
+    }
+    25% {
+        grid-column: 1/61; /* Move columns closer */
+        grid-row: 15/31; /* Move rows closer */
+    }
+    50% {
+        grid-column: 1/61; /* Move columns further closer */
+        grid-row: 10/31; /* Move rows further closer */
+    }
+    75% {
+        grid-column: 1/61; /* Move columns even further closer */
+        grid-row: 5/31; /* Move rows even further closer */
+    }
+    100% {
+        grid-column: 1/61; /* Cover all columns */
+        grid-row: 2/31; /* Cover all rows */
+    }
+}
+.deps{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.deps h2{
+    color: azure;
+    font-family: "Poetsen One", sans-serif;
+    padding: 5px 0 0 20px;
+}
+.deps select{
+    width: fit-content;
+    position: absolute;
+    top: 8px;
+    right:  20px;
+    height: 25px;
+    background-color: rgb(16, 52, 91);
+    color: aqua;
+    border: none;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.cellContainer {
+    display: flex;
+    /* justify-content: center;  */
+    align-items: center; /* Aligns vertically center */
+    height: 100%; /* Ensures it takes the full height of the cell */
+}
+
+.tableHeader {
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  }

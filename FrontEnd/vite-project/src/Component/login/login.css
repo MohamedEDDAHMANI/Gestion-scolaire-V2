@@ -1,0 +1,396 @@
+.loginBigContainer{
+    width: 35%;
+    height: 355px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.434) ;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background: linear-gradient(rgba(21, 131, 248, 0.457)70% ,#0ff3f389 ); */
+}
+.singupTitel{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singupTitel h2 {
+    font-size: 35px;
+    color: #3afffe;
+    cursor: pointer;
+    transition: filter 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.singupTitel h2:hover{
+    filter: drop-shadow(1px 1px 10px #3afffe);
+}
+.containetSingup{
+    height: 270px;
+    display: flex;
+}
+.presonnelInputs{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.presonnelInputs input{
+    width: 80%;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #06232f;
+    color: azure;
+    font-size: 15px;
+    box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.379);
+    padding-left: 5px;
+}
+.presonnelInputs input::placeholder{
+    font-size: 17px;
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.presonnelInputs h4{
+    color: #c1e1fc;
+    margin-top: 20px;
+}
+.loginInputs{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginInputs input{
+    width: 80%;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFF;
+    font-size: 15px;
+    background-color: #06232f;
+    box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.379);
+    padding-left: 5px;
+}
+.loginInputs input::placeholder{
+    font-size: 17px;
+    color: #FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.userTypeInput{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.userTypeInput .userType{
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    background-color: #06232f;
+    box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.379);
+    color: #FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.userType option{
+    border-radius: 10px;
+    border: none;
+    color: #FFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btnSubmit{
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 1000;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 35px;
+}
+.btnSubmit::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.btnSubmit::before{
+    content: '';
+    background: linear-gradient(
+        45deg,
+        #f2f556, #99c5f7, #3afffe, #dc99f0, #79d1d1
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing {
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+
+.btnSubmit:hover::after{
+    background: transparent;
+}
+.loginCon{
+    width: 100%;
+    height: 90%;
+    backdrop-filter: blur(5px);
+    background-color: #3affff36;
+    border-radius: 60% / 10%;
+    transition: transform .3s ease-in-out;
+    transform: translateY(-40px);
+}
+.loginConActive{
+    width: 100%;
+    height: 90%;
+    backdrop-filter: blur(8px);
+    background-color: #3affff36;
+    border-radius: 60% / 10%;
+    transition: transform .3s ease-in-out;
+    z-index: 10000;
+    transform: translateY(-266px);
+}
+.LoginTitel{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.LoginTitel h2{
+    cursor: pointer;
+    transition: filter 1s ;
+}
+.LoginTitel h2:hover{
+    filter: drop-shadow(1px 1px 10px #FFFF);
+}
+.loginForm{
+    width: 100%;
+    height: 80%;
+}
+.containetLogin{
+    width: 100%;
+    height: 100%;
+}
+.LoginInp{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.LoginInp input {
+    width: 55%;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f3eae8;
+    box-shadow: 0 0 5px black;
+    padding-left: 10px;
+}
+.LoginInp input::placeholder{
+    font-size: 17px;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btnLogin{
+    padding: 8px 110px;
+    border: none;
+    outline: none;
+    color: #472748;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 1000;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+.btnLogin::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+
+}
+
+.btnLogin::before{
+    content: '';
+    background: linear-gradient(
+        45deg,
+        #f2f556, #79b0f3, #00fdf8, #dc99f0, #46bbbb
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing {
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+
+.btnLogin:hover::after{
+    background: transparent;
+}
+.ForgetPassLink{
+    width: fit-content;
+    color: #FFFF;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.loginInputs .password-error{
+    border: solid .5px red ;
+}
+.error-message{
+    width: 98%;
+    height: fit-content;
+    background-color: rgba(255, 0, 0, 0.774);
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #FFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+}
+.done-message{
+    width: 98%;
+    position: absolute;
+    height: fit-content;
+    background-color: rgba(31, 121, 246, 0.774);
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #FFFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+}
+
+
+@media (max-width:1130px){
+    .presonnelInputs input::placeholder{font-size: 15px;}
+    .loginInputs input::placeholder{font-size: 15px;}
+    .singupTitel h2{font-size: 30px;}
+    .LoginTitel h2{font-size: 30px;}
+}
+@media (max-width:1010px){
+    .loginBigContainer{width: 45%;}
+}
+@media (max-width:800px){
+    .loginBigContainer{width: 55%;}
+}
+@media (max-width:700px){
+    .loginBigContainer{width: 65%;}
+}
+@media (max-width:550px){
+    .loginBigContainer{
+        height: 400px;
+    }
+    .singupTitel {
+        height: fit-content;
+        padding-top: 5px;
+    }
+    .containetSingup{
+        display: inline;
+    }
+    .presonnelInputs{
+        display: inline-block;
+        width: 100%;
+        height: 120px;
+    }
+    .presonnelInputs input{
+        height: 30px;
+        width: 35%;
+        margin-left: 9%;
+    }
+    .presonnelInputs h4 {
+        margin-top: 10px;
+        margin-left: 9%;
+    }
+    .presonnelInputs .userType{
+        margin-left: 2px;
+        margin-bottom: 0px;
+        width: 83%;
+        height: 30px;
+        font-size: 15px;
+    }
+    .loginInputs{
+        width: 100%;
+        display: inline-block;
+    }
+    .loginInputs input{
+        width: 35%;
+        height: 30px;
+        margin-bottom: 0;
+        margin-left: 9%;
+    }
+    .loginInputs .email{
+        width: 81%;
+    }
+    .btnSubmit{
+        width: 83%;
+        margin-left: 9%;
+    }
+    .loginCon{
+        transform: translateY(10px);
+    }
+}

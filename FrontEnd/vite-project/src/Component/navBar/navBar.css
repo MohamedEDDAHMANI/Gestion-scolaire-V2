@@ -1,0 +1,72 @@
+.navbarBigContainer{
+    padding: 15px 10px ;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 2/8 ;
+}
+.navbarBigContainer ul{
+    list-style: none; 
+}
+.navbarBigContainer ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: .3s;
+    position: relative;
+    font-size: 17px;
+    font-weight: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbarBigContainer ul li:hover a{
+    background-color: rgb(16, 52, 91);
+    border-radius: 10px;
+    z-index: 0;
+}
+.night  ul li.active a{
+    background-color: rgb(6, 30, 56);
+    border-radius: 10px;
+    color: green;
+    z-index: 1;
+}
+.day  ul li.active a{
+    background-color: rgb(6, 30, 56);
+    border-radius: 10px;
+    color: aqua;
+    z-index: 1;
+}
+.acc{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.parametre{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+.active .indicator{
+    position:absolute;
+    background-color: aqua;
+    left: -0px;
+    width: 3px;
+    height: 15px;
+}
+
+@media (max-width: 1080px){
+    .navbarBigContainer{
+        padding: 15px 10px ;
+        position: relative;
+        width: 40px;
+    }
+    .navbarBigContainer ul li a p{
+        display: none;
+    }
+    .navbarBigContainer ul li a {
+        width: 25px;
+    }
+}

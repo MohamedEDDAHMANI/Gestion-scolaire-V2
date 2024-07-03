@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+.contenteContainer{
+    grid-column: 2/-1;
+    grid-row: 2/8;
+    background: linear-gradient(rgba(180, 196, 213, 0.269) ,#65cbcb89 );
+    padding: 8px;
+    border-radius: 25px;
+    margin: 0 7px 7px 0 ;
+    display: grid;
+    grid-template-columns: repeat(60,1fr);
+    grid-template-rows: repeat(30,1fr);
+    gap: 8px;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -99;
+}
+.activiteContainer{
+    grid-column: 1/-1;
+    padding: 0px 50px;
+    border-radius: 25px;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    /* position: absolute; */
+}
+.activiteContainer h3{
+    color: whitesmoke;
+}
+
+@media (max-width: 1080px){
+    .contenteContainer{
+        grid-column: 2/-1;
+    }
+}

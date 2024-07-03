@@ -1,0 +1,138 @@
+.ShowCreateContainer{
+    grid-column: 40/61;
+    grid-row: 2/20;
+    border-radius: 25px;
+    /* background: linear-gradient(to right,rgba(0, 0, 0, 0.715)5%, rgba(0, 0, 0, 0.838)); */
+    backdrop-filter: blur(5px);
+    animation: createAnimationReverse 0.2s ease-in-out forwards;
+    overflow: hidden;
+    position: relative;
+
+}
+
+  
+@keyframes createAnimationReverse {
+    0% {
+        grid-column: 1/-1; 
+        grid-row: 2/-1; 
+    }
+    25% {
+        grid-column: 15/-1; 
+        grid-row: 2/26; 
+    }
+    50% {
+        grid-column: 25/-1; 
+        grid-row: 2/24;
+    }
+    75% {
+        grid-column: 35/-1; 
+        grid-row: 2/22; 
+    }
+    100% {
+        grid-column: 40/-1; 
+        grid-row: 2/20; 
+    }
+}
+
+.selectedCreér{
+    border-radius: 25px;
+    z-index: 1;
+    overflow: hidden;
+    animation: createAnime 0.2s ease-in-out forwards;
+}
+@keyframes createAnime {
+    0% {
+        grid-column: 40/61;
+        grid-row: 2/20;
+        opacity: 0;
+        backdrop-filter: blur(5px);
+    }
+    25% {
+        grid-column: 35/-1; /* Move left */
+        grid-row: 2/22; /* Move down */
+        opacity: 0.1;
+        backdrop-filter: blur(5px);
+    }
+    50% {
+        grid-column: 25/-1; /* Move further left */
+        grid-row: 2/24; /* Move further down */
+        opacity: 0.2;
+        backdrop-filter: blur(5px);
+    }
+    75% {
+        grid-column: 15/-1; /* Continue moving left */
+        grid-row: 2/26; /* Continue moving down */
+        opacity: 0.3;
+        backdrop-filter: blur(5px);
+    }
+    100% {
+        grid-column: 1/-1; /* Cover all columns */
+        grid-row: 2/-1; /* Cover all rows */
+        opacity: 1;
+        /* backdrop-filter: blur(5px); */
+    }
+}
+.selectedCreér .Showtitel{
+    display: none;
+}
+.selectedCreér .Showtitel{
+    display: inline-flex;
+}
+.Showtitel{
+    text-align: center;
+
+}
+.Showtitel .btnSubmit{
+    color: whitesmoke;
+}
+.btnSubmit::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color:rgba(22, 52, 82, 0.521);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.Showtitel p{
+    margin-top: 10px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.ChoicesContainer{
+    background-color: rgb(1, 21, 41);
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    padding: 5px;
+}
+.ChoicesContainer span{
+    padding: 3px;
+    border-radius: 5px;
+    transition: .1s ease-in;
+    cursor: pointer;
+    color: rgb(999, 999, 999);
+}
+.ChoicesContainer span:hover{
+    background-color: rgb(0, 102, 255);
+}
+.night span:hover{
+    background-color: rgb(0, 255, 98);
+    color: black;
+}
+
+.createComponent{
+    width: 100%;
+    height: 100%;
+}
+
+
+  
+  

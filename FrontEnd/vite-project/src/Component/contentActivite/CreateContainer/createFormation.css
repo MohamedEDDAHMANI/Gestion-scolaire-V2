@@ -1,0 +1,143 @@
+.fillFormationContainer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.FormationForm{
+    width: 50%;
+    height: 100%;
+    padding: 20px 0px 0px 40px;
+    animation: EnseignantForm .3s ease-in-out;
+}
+
+.FormationData h3{
+    color: #00ffff;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.forDesignationLabel{
+    margin: 0 0 20px 30px;
+    color: aqua;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.forDesignationLabel::before {
+    width: 18px;
+    height: 18px;
+}
+.forDesignationLabel::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+.forDesignationLabel::before,
+.forDesignationLabel::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: -30px;
+    top: 10px;
+    background-color: #dce2e4;
+}
+.ValueOfInputFormation{
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+    color: whitesmoke;
+}
+#designationDeFormationInput{
+    width: 250px;
+    height: 25px;
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: solid 1.5px rgb(1, 21, 41);
+    background-color:rgb(1, 21, 41);
+    box-shadow: 0px 0px 2px .5px  rgba(255, 255, 255, 0.564);
+    border-radius: 2px;
+}
+#designationDeFormationInput::placeholder{
+    font-size: 15px;
+    color: rgb(189, 184, 184);
+}
+.selectDepartement{
+    width: 265px;
+    height: 25px;
+    color: whitesmoke;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: solid 1.5px rgb(1, 21, 41);
+    background-color:rgb(1, 21, 41);
+    box-shadow: 0px 0px 2px .5px  rgba(255, 255, 255, 0.564);
+    border-radius: 2px;
+}
+.DataTabel{
+    width: 100%;
+}
+.DataTabel tr th{
+    margin: 3px 0px;
+}
+.DataTabel tr th{
+    position: relative;
+}
+.DataTabel tr td{
+    padding:  0px 0px 0 10px;
+}
+.longFormationData{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgb(30, 64, 100),  rgb(15, 31, 48) );
+    animation: EnseignantData .3s ease-in-out;
+}
+.longFormationData h3{
+    color: #00ffff;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.longFormationData .DataBaseActiveBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: aliceblue;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+}
+.submitF {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 260px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+    position: absolute;
+    bottom: 65px;
+    left: 50px;
+}
+.DeletaBtnF{
+    width: 20px;
+    height: 90%;
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
