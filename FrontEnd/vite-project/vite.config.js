@@ -9,11 +9,19 @@ export default defineConfig({
   commonjsOptions: {
     esmExternals: true,
  },
+ build: {
+  rollupOptions: {
+    external: ['axios']
+  }
+}
 })
+
+
 // export default defineConfig({
-//   plugins: [react()],
-//   commonjsOptions: {
-//      esmExternals: true,
-//   },
-// });)
+//   build: {
+//     rollupOptions: {
+//       external: ['axios']
+//     }
+//   }
+// });
 

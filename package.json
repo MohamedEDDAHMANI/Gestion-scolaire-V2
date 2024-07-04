@@ -1,5 +1,26 @@
 {
+  "homepage": "https://MohamedEDDAHMANI.github.io/Gestion-scolaire-V2",
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "axios": "^0.21.1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "vite build"
   }
 }
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "scripts": {
+    "predeploy": "npm run build",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    // your dependencies
+  },
+  "devDependencies": {
+    // your dev dependencies
+  }
+}
+
