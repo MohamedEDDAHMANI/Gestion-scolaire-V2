@@ -7,14 +7,11 @@ import CreateModules from './createModules'
 import CreateEnseignant from './createEnseignant'
 import CreateClasse from './createClasse'
 import CreateEtudiant from './createEtudiant'
-// import {createStore} from "redux"
 
 const CreateContainer = ({ ActiveCréer, ActiveModifier, ActiveStatistiques, handleButtonClick, nighteMood }) => {
 
 
 
-    // const storeData = createStore()
-    const token = localStorage.getItem('token')
     const [isActive, setIsActive] = useState('departement')
     const [depData, setDepData] = useState([])
     const [forData, setForData] = useState([])

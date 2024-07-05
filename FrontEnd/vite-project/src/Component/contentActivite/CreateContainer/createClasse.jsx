@@ -2,13 +2,9 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './createClasse.css'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 
-function createClasse({forData, classes,fetchClasses , nighteMood, ActiveCréer}) {
-
-    console.log(classes)
+function createClasse({forData, classes,fetchClasses , nighteMood}) {
 
 
     const token = localStorage.getItem('token')

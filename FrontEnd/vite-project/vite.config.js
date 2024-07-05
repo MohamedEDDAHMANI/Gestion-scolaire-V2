@@ -11,17 +11,10 @@ export default defineConfig({
  },
  build: {
   rollupOptions: {
-    external: ['axios']
+    external: ['axios'],
+    input: {
+      main: './src/main.jsx' // Adjust this path to match your actual entry point
+    }
   }
 }
 })
-
-
-// export default defineConfig({
-//   build: {
-//     rollupOptions: {
-//       external: ['axios']
-//     }
-//   }
-// });
-
