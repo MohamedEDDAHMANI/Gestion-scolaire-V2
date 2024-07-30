@@ -1,4 +1,3 @@
-const etudiantSchema = require('../model/etudiantSchema')
 const departementSchema = require('../model/departementSchema')
 
 
@@ -6,7 +5,6 @@ const postEtudiant = async (req, res) => {
     const { nom, prenom, dateDeNaissance, classe } = req.body;
     const picture = req.file ? req.file.filename : null; 
     const departement = await departementSchema.findOne({ 'formation.classe.designation': classe });
-    const depId = departement._id
     try {
         const result = await departementSchema.findOneAndUpdate(
             { _id: departement._id, 'formation.classe.designation': classe },

@@ -1,5 +1,4 @@
 const departementSchema = require('../model/departementSchema')
-const classeSchema = require('../model/classeSchema')
 
 
 const postClasse = async (req, res) => {
